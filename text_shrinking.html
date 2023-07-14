@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Continuous Text Shrinking Effect</title>
+	<style>
+		.blink {
+		animation: blink 0.5s infinite alternate;
+		}
+
+		@keyframes blink {
+		from {
+			opacity: 1;
+			color: red;
+		}
+		to {
+			opacity: 0;
+			color:goldenrod;
+		}
+		}
+	</style>
+</head>
+<body>
+	<div class="blink">Hello, world!</div>
+	<script>
+		setTimeout(() => {
+		document.querySelector('.blink');
+		}, 1000);
+
+	</script>
+</body>
+</html>

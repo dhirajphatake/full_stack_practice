@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>     
+    .blinking {
+      animation: blink 1s linear infinite;
+    }
+    
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+    <div class="blink">Blinker</div>
+
+    <script>
+        window.onload=function(){
+            var element = document.querySelector('.blink');
+            function blink(){
+                element.classList.toggle('blinking');
+            }
+            setInterval(blink,1000);
+        }
+    </script>
+</body>
+</html>
